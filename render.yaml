@@ -1,0 +1,14 @@
+# Render.com — Background Worker (Hobby)
+# Deploy: connect this repo, set env vars BOT_TOKEN and ADMIN_IDS in dashboard
+services:
+  - type: worker
+    name: big-mumbai-bot
+    runtime: python
+    plan: hobby
+    buildCommand: pip install -r bIG-MUMBAI-BOT/requirements.txt
+    startCommand: cd bIG-MUMBAI-BOT && python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
