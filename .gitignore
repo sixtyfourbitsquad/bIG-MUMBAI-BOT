@@ -1,10 +1,37 @@
+# Environment variables
 .env
-*.db
+
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
 venv/
+env/
+ENV/
 .venv/
-.idea/
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
 .vscode/
-*.log
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
